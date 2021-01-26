@@ -7,7 +7,7 @@
 Date created: 2021-01-25
 
 ## Authors and Contributors
-Authored by: Micah Olson and Jon Stump
+Authored by: Micah Olson, Chloe Loveall, Jon Stump
 
 ## Description
 _Practice: Address Book_  
