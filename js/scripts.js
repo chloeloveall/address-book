@@ -35,10 +35,23 @@ function Contact(firstName, lastName, phoneNumber, emailAddress) {
   this.lastName = lastName;
   this.phoneNumber = phoneNumber;
   this.emailAddress = emailAddress;
+  this.physicalAddresses = {};
 }
 
 Contact.prototype.fullName = function() {
   return this.firstName +  " " + this.lastName;
+}
+
+Contact.prototype.addAddress = function(address) {
+  this.physicalAddresses(address.addressLabel) = address;
+}
+
+// Business Logic for Addresses ----------
+function Address(addressLabel, streetAddress, state, zipCode) {
+  this.addressLabel = addressLabel;
+  this.streetAddress = streetAddress;
+  this.state = state;
+  this.zipCode = zipCode;
 }
 
 // User Interface Logic ---------
